@@ -1,8 +1,9 @@
-# cloud-primetime-appletv
-The PrimeTime Apple TV app is a companion application to PrimeTime to easily onboard new screens and show content.
+# PrimeTime - Apple TV
+## Introduction
+The PrimeTime Apple TV app is a companion application to [PrimeTime](https://github.com/SAP/cloud-primetime) to easily onboard new screens and show content.
 
 ## Description
-The PrimeTime Apple TV app is the client to PrimeTime that can be remote controlled from the server for displaying changing screen content. It also reports status information from the app, like current version, last errors, and even screenshots of what is currently displayed.
+The PrimeTime Apple TV app is the client to PrimeTime that can be remote controlled from the server for displaying changing screen content. It also reports status information from the app, like the current version, last errors, and also screenshots of what is currently displayed.
 
 Note: The app uses UIWebView, which is a private API on tvOS.
 
@@ -42,10 +43,10 @@ You need to provide a config file, either included in the app package (PrimeTime
 ```
 
 ## How to obtain support
-Please use GitHub issues for any bugs to be reported.
+Please use GitHub [issues](https://github.com/SAP/cloud-primetime-appletv/issues/new) for any bugs to be reported.
 
 ## Contributing
 Contributions are very welcome.
 
 ## License
-Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the Apache Software License v.2, except as noted otherwise in the LICENSE file.
+Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the Apache Software License v2, except as noted otherwise in the [LICENSE](/LICENSE) file.
