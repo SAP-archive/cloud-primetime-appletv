@@ -11,7 +11,7 @@ Note: The app uses UIWebView, which is a private API on tvOS.
 AppleTV 4th Generation
 
 ## Download and installation
-Use [XCode](https://itunes.apple.com/de/app/xcode/id497799835) to build the app. There are two schemas:
+Use [XCode](https://itunes.apple.com/de/app/xcode/id497799835) to build the app. There are two schemes:
 
 * `PrimeTimeConfig`: Used for builds that embed the config file in the app package and do not require mobile device management
 * `PrimeTimeMDM`: Used for builds that do not include the config file but excpect it to be pushed by mobile device management
@@ -20,8 +20,8 @@ Usually you run the PrimeTime Apple TV app in single app mode to ensure automati
 
 ## Configuration
 You need to provide a config file:
-* `PrimeTimeConfig` schema: A `config.plist` file has to be included in the app package by placing the file under the path `cloud-primetime-appletv/PrimeTime/config.plist`
-* `PrimeTimeMDM` schema: configuration pushed by an MDM solution
+* `PrimeTimeConfig` scheme: A `config.plist` file has to be included in the app package by placing the file under the path `cloud-primetime-appletv/PrimeTime/config.plist`
+* `PrimeTimeMDM` scheme: configuration pushed by an MDM solution
 
 The configuration should have the following content:
 
@@ -45,6 +45,13 @@ The configuration should have the following content:
 </dict>
 </plist>
 ```
+
+# How to test PrimeTimeConfig in tvOS simulator
+1. Place `config.plist` under `cloud-primetime-appletv/PrimeTime/config.plist` as described under `Configuration`
+2. Open PrimeTime.xcodeproj with XCode
+3. Select `PrimeTimeConfig` scheme if not already selected
+4. Press the `Run` button to run the app in the tvOS simulator
+5. Follow the instructions displayed in the app
 
 ## How to obtain support
 Please use GitHub [issues](https://github.com/SAP/cloud-primetime-appletv/issues/new) for any bugs to be reported.
