@@ -11,15 +11,19 @@ Note: The app uses UIWebView, which is a private API on tvOS.
 AppleTV 4th Generation
 
 ## Download and installation
-Use XCode to build the app. There are two build configurations:
+Use [XCode](https://itunes.apple.com/de/app/xcode/id497799835) to build the app. There are two schemas:
 
-* PrimeTime Config: Used for builds that embed the config file in the app package and do not require mobile device management
-* PrimeTime MDM: Used for builds that do not include the config file but excpect it to be pushed by mobile device management
+* `PrimeTimeConfig`: Used for builds that embed the config file in the app package and do not require mobile device management
+* `PrimeTimeMDM`: Used for builds that do not include the config file but excpect it to be pushed by mobile device management
 
 Usually you run the PrimeTime Apple TV app in single app mode to ensure automatic restart in case anything goes wrong.
 
 ## Configuration
-You need to provide a config file, either included in the app package (PrimeTime Config build configuration) or pushed by an MDM solution (PrimeTime MDM build configuration). In both cases the file is named `config.plist` and has this content:
+You need to provide a config file:
+* `PrimeTimeConfig` schema: A `config.plist` file has to be included in the app package by placing the file under the path `cloud-primetime-appletv/PrimeTime/config.plist`
+* `PrimeTimeMDM` schema: configuration pushed by an MDM solution
+
+The configuration should have the following content:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
