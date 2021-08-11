@@ -1,3 +1,8 @@
+![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
+
+# Important Notice
+This public repository is read-only and no longer maintained.
+
 # PrimeTime - Apple TV
 ## Introduction
 The PrimeTime Apple TV app is a companion application to [PrimeTime](https://github.com/SAP/cloud-primetime) to easily onboard new screens and show content.
